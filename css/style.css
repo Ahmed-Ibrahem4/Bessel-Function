@@ -1,0 +1,231 @@
+body{
+    font-family: Ubuntu,Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+    .slidecontainer {
+        width: 100%;
+        height: 30px;
+        margin-top: 20px;
+        
+        padding-top: 10px;
+    }
+    
+    .slider {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 100%;
+        height: 4px;
+        border-radius: 5px;
+        background: #d3c2c2;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .slider:hover {
+        opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        border:11px #0298ca solid;
+    }
+    .slider::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        border:10px #0298ca solid;
+    }
+
+
+/* -----------------------*/
+.title,.description-title{
+    color: #e95420;
+}
+h4{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+
+#myDiv{
+    /* widows: 100px; */
+    height: 600px;
+}
+.plottinGraph{
+    /* margin: 10px 20px; */
+}
+.description-control-container,.img1{
+    padding-left: 0px;
+}
+/* .svg-container{
+    width: 95%;;
+    height: 95%;
+} */
+.ctrl1,.ctrl2,.ctrl3{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    /* background-color: red; */
+}
+.plotAll{
+    position: absolute;
+    top:-45%;
+    left: 0%;
+    font-size: 13px;
+    width: 87px;
+}
+.plotOne{
+    position: absolute;
+    top:-45%;
+    left: 83%;
+    font-size: 13px;
+    width: 87px;
+}
+.minValue{
+    position: absolute;
+    top:-4%;
+    left: 0%;
+    font-size: 13px;
+    width: 83px;
+}
+.maxValue{
+    position: absolute;
+    top:-4%;
+    left: 84%;
+    font-size: 13px;
+    width: 83px;
+}
+.j0,.j1,.j2,.j3,.j4{
+    position: absolute;
+    font-size: 15px;
+    width: 15px;
+}
+.j0{
+    top: -13%;
+    left: 4%;
+}
+.j1{
+    top: -13%;
+    left: 25%;
+}
+.j2{
+    top: -13%;
+    left: 45%;
+}
+
+.j3{
+    top: -13%;
+    left: 66%;
+}
+
+.j4{
+    top: -13%;
+    left: 86%;
+}
+@media(max-width:1200px) and (min-width:100px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        margin: 0px auto;
+        width: 98%;
+        
+    }
+}
+@media(max-width:1000px) and (min-width:790px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        margin: 0px auto;
+        width: 98%;
+        
+    }
+    .description-control-container,.plottinGraph{
+        width: 40%;
+    }
+    .plottinGraph{
+        width: 60%;
+    }
+}
+@media(max-width:790px) and (min-width:300px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        margin: 0px auto;
+        width: 98%;
+        
+    }
+    .description-control-container,.plottinGraph{
+        width: 100%;
+    }
+    .plottinGraph{
+        width: 100%;
+    }
+    .plotOne{
+        left: 88%;
+    }
+    .maxValue{
+        left: 90%;
+    }
+.j0{
+    top: -13%;
+    left: 2%;
+}
+.j1{
+    top: -13%;
+    left: 25%;
+}
+.j2{
+    top: -13%;
+    left: 47%;
+}
+
+.j3{
+    top: -13%;
+    left: 70%;
+}
+
+.j4{
+    top: -13%;
+    left: 93%;
+}
+}
+.controls-container *{
+    color: #55637d;
+    font-size: 14px;
+}
+
+
+
+/* .plotAll,
+.plotOne,
+.minValue,
+.maxValue,
+.j0,
+.j1,
+.j2,
+.j3,
+.j4{
+    color: #55637d;
+    font-size: 18px;
+} */

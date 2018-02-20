@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <script src="js/plot.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+      
+</head>
+      
+<body>
+    <div class="container">
+    <div class="row">
+        <div class="title col-xs-12">
+            <h2>Bessel Function of the First Kind</h2>
+        </div>
+        <div class="col-xs-4 description-control-container">
+            <div class="description-title col-xs-12">
+                <h3>Description</h3>
+            </div>
+            <div class="description-content col-xs-12">
+                <h4>The objective of this tool is to familiarize students with Bessel Function of the First Kind. This tool is capable of plotting different types of J<sub>v</sub>(z) which v=0,1,2,3,4 and
+                    The Bessel functions of the first kind J<sub>v</sub>(z) are defined as the solutions to the Bessel differential equation.
+                </h4>
+            </div>
+
+        
+        <div class="imgs-description col-xs-12">
+            <div class="img1 col-xs-12">
+                <img src="imgs/eq1.JPG">
+                <img src="imgs/eq2.JPG">
+            </div>
+        </div>
+        <div class="controls-container col-xs-12">
+            <div class="ctrl1 col-xs-12">
+                    <span class="plotAll">Plot Functions Simultaneously</span>
+                    <span class="plotOne">Plot Functions individually</span>
+                    <div class="slidecontainer">
+                            <input type="range" min="0" max="1" value="0" class="slider" id="plotAllOrOne" >
+                            <!-- <p>Value: <span id="demo"></span></p> -->
+                        </div>
+            </div>
+            <div class="ctrl2 col-xs-12">
+                <span class="minValue"><b>From :</b> 0<span id="minValId"></span></span>
+                <span class="maxValue"><b>To :</b> <span id="maxValId">35</span></span>
+                    <div class="slidecontainer">
+                            <input type="range" min="1" max="35" value="35" class="slider" id="min-max" >
+                            <!-- <p>Value: <span id="demo"></span></p> -->
+                        </div>
+            </div>
+            <div class="ctrl3 col-xs-12">
+                    <span class="j0" >J<sub>0</sub>(z)</span>
+                    <span class="j1" hidden>J<sub>1</sub>(z)</span>
+                    <span class="j2" hidden>J<sub>2</sub>(z)</span>
+                    <span class="j3" hidden>J<sub>3</sub>(z)</span>
+                    <span class="j4" hidden>J<sub>4</sub>(z)</span>
+                    <div class="slidecontainer">
+                            <input type="range" min="0" max="4" value="0" class="slider" id="functionValue" >
+                            <!-- <p>Value: <span id="demo"></span></p> -->
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div class="plottinGraph col-xs-8">
+            <div id="myDiv"></div>
+    </div>
+    </div>
+
+    </div>
+
+    
+    
+     
+<script src="js/besselCalculations.js"></script>     
+</body>
+</html>
